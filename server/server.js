@@ -15,7 +15,7 @@ app.use(
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173","https://knowledgecube-app.onrender.com"],
     credentials: true,
     exposedHeaders: ["set-cookie"],
   })
