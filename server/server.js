@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
 
 const app = express();
-const PORT = process.env.PORT ||8080;
+const PORT = process.env.PORT || 8080;
 
 app.use(
   express.urlencoded({
@@ -15,6 +15,7 @@ app.use(
 
 app.use(
   cors({
+    origin: ["http://localhost:5173"],
     credentials: true,
     exposedHeaders: ["set-cookie"],
   })
