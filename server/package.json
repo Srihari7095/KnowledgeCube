@@ -7,9 +7,7 @@
   "scripts": {
   "start": "node server.js",
   "dev": "nodemon server.js",
-  "build": "npm install && npm run migrate && npm run build-ts",
-  "migrate": "your-migration-command-here",
-  "build-ts": "your-typescript-build-command-here"
+  "build": "npm install"
   },
   "keywords": [
     "LMS",
